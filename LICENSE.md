@@ -1,9 +1,11 @@
-# TotalFreedom General License #
-_Version 2.0, 27th February 2015_
+# RFreedom General License #
+_Version 2.0, 15th Janurary 2017_
 
 Copyright (c) 2011 Steven Lawson
 
 Copyright (c) 2012 Jerom van der Sar
+
+Copyright (c) 2017 Decyj145 & reuben4545
 
 All rights reserved.
 
