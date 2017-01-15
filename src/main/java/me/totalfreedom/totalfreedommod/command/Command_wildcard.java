@@ -39,7 +39,6 @@ public class Command_wildcard extends FreedomCommand
         if (BLOCKED_COMMANDS.contains(runCmd.getName()))
         {
             msg("Did you really think that was going to work?", ChatColor.RED);
-            return true;
         }
 
         String baseCommand = StringUtils.join(args, " ");
@@ -52,9 +51,9 @@ public class Command_wildcard extends FreedomCommand
 
         for (Player player : server.getOnlinePlayers())
         {
-            String runCommand = baseCommand.replaceAll("\\x3f", player.getName());
-            msg("Running Command: " + runCommand);
-            server.dispatchCommand(sender, runCommand);
+            baseCommand = baseCommand.replaceAll("\\x3f", player.getName());
+            msg("Running Command: " + baseCommand);
+            server.dispatchCommand(sender, baseCommand);
         }
 
         return true;

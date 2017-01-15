@@ -19,7 +19,7 @@
         <maven.build.timestamp.format>dd/MM/yyyy hh:mm aa</maven.build.timestamp.format>
     </properties>
 
-    <name>TotalFreedomMod</name>
+    <name>RFreedomMod</name>
     <description>Server modification for the TotalFreedom server</description>
     <url>https://github.com/TotalFreedom/TotalFreedomMod</url>
 
@@ -95,14 +95,6 @@
             <version>2.0-TF</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/TF-Essentials-2.1.jar</systemPath>
-        </dependency>
-
-        <dependency>
-            <groupId>me.libaryaddict.disguise</groupId>
-            <artifactId>LibsDisguises</artifactId>
-            <version>9.0.9</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/LibsDisguises-9.0.9.jar</systemPath>
         </dependency>
     </dependencies>
 
