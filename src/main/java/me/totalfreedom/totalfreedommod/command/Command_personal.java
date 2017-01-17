@@ -11,7 +11,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-@CommandPermissions(level = AdminLevel.SUPER, source = SourceType.ONLY_IN_GAME)
+@CommandPermissions(level = AdminLevel.SUPER_ADMIN, source = SourceType.ONLY_IN_GAME)
 @CommandParameters(description = "Run your personal command.", usage = "/<command>", aliases = "psl")
 public class Command_personal extends TFM_Command
 {
