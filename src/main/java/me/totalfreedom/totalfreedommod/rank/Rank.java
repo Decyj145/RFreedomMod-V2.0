@@ -6,14 +6,14 @@ import org.bukkit.ChatColor;
 public enum Rank implements Displayable
 {
 
-    IMPOSTOR("an", "Impostor", Type.PLAYER, "Imp", ChatColor.YELLOW),
+       IMPOSTOR("an", "Impostor", Type.PLAYER, "Imp", ChatColor.YELLOW),
     NON_OP("a", "Non-Op", Type.PLAYER, "", ChatColor.GREEN),
     OP("an", "Op", Type.PLAYER, "OP", ChatColor.RED),
-    SUPER_ADMIN("a", "Super Admin", Type.ADMIN, "SA", ChatColor.AQUA),
-    TELNET_ADMIN("a", "Telnet Admin", Type.ADMIN, "STA", ChatColor.DARK_GREEN),
-    SENIOR_ADMIN("a", "Senior Admin", Type.ADMIN, "SrA", ChatColor.GOLD),
-    TELNET_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
-    SENIOR_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE);
+    SAPPHIRE_ADMIN("a", "Sapphire Admin", Type.ADMIN, "SA", ChatColor.AQUA),
+    RUBY_ADMIN("a", "Ruby Admin", Type.ADMIN, "RA", ChatColor.RED),
+    ETERNAL_ADMIN("an", "Eternal Admin", Type.ADMIN, "EA", ChatColor.DARK_AQUA),
+    RUBY_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
+    ETERNAL_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE);
     @Getter
     private final Type type;
     @Getter
@@ -87,12 +87,12 @@ public enum Rank implements Displayable
     {
         switch (this)
         {
-            case TELNET_ADMIN:
-            case TELNET_CONSOLE:
-                return TELNET_CONSOLE;
-            case SENIOR_ADMIN:
-            case SENIOR_CONSOLE:
-                return SENIOR_CONSOLE;
+            case RUBY_ADMIN:
+            case RUBY_CONSOLE:
+                return RUBY_CONSOLE;
+            case ETERNAL_ADMIN:
+            case ETERNAL_CONSOLE:
+                return ETERNAL_CONSOLE;
             default:
                 return null;
         }
@@ -102,12 +102,12 @@ public enum Rank implements Displayable
     {
         switch (this)
         {
-            case TELNET_ADMIN:
-            case TELNET_CONSOLE:
-                return TELNET_ADMIN;
-            case SENIOR_ADMIN:
-            case SENIOR_CONSOLE:
-                return SENIOR_ADMIN;
+            case RUBY_ADMIN:
+            case RUBY_CONSOLE:
+                return RUBY_CONSOLE;
+            case ETERNAL_ADMIN:
+            case ETERNAL_CONSOLE:
+                return ETERNAL_ADMIN;
             default:
                 return null;
         }
@@ -140,3 +140,4 @@ public enum Rank implements Displayable
     }
 
 }
+
